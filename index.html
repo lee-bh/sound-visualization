@@ -1,0 +1,16 @@
+<!doctype html>
+<head>
+<title>BH Web Audio</title>
+<script src="pitchdetect.js"></script>
+<style>
+	#audioGraph{width:100%;height:600px;}
+</style>
+</head>
+<body>
+<button onclick="stopSound();javascriptNode.removeEventListener('audioprocess', startDraw);">stop</button>
+<button onclick="playSound(theBuffer);javascriptNode.addEventListener('audioprocess', startDraw, false);">start</button>
+<button onclick="pauseSound();javascriptNode.removeEventListener('audioprocess', startDraw);">pause</button>
+<div id="audioGraph">
+</div>
+
+</body>
