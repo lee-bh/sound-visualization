@@ -44,7 +44,7 @@ function setup(){
 
 window.onload = function() {
 	var request = new XMLHttpRequest();
-	request.open("GET", "./gee.mp3", true);
+	request.open("GET", "./from-faraway.mp3", true);
 	request.responseType = "arraybuffer";
 	request.onload = function() {
 		audioContext.decodeAudioData(request.response, function(buffer) { 
