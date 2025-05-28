@@ -7,7 +7,6 @@ var javascriptNode;
 var splitter = null;
 var pause;
 var channel = 128;
-document.body.style.background = "black";
 
 function drawGraph(array,array2){
     var graph = document.getElementById('audioGraph');
